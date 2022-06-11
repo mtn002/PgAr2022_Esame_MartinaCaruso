@@ -8,49 +8,117 @@ public class Personaggio {
     private int attacco = 5;
     private int difesa=5;
 
-    private Oggetto inManodx;
+    private Arma inManodx = new Arma("", "","", 0);
 
+    private Arma arma = new Arma("","","Arma", 0);
 
-
-    public Oggetto getInMano() {
-        return inManodx;
+    public Personaggio(String nome, int vita) {
+        this.nome = nome;
+        this.vita = vita;
     }
 
-    public void setInManodx(Oggetto inMano) {
-        this.inManodx = inMano;
-    }
+
+
+
 
     public String getNome() {
         return nome;
     }
 
+
+
+
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+
+
+
 
     public int getVita() {
         return vita;
     }
 
+
+
+
+
     public void setVita(int vita) {
         this.vita = vita;
     }
+
+
+
+
 
     public int getAttacco() {
         return attacco;
     }
 
+
+
+
+
     public void setAttacco(int attacco) {
         this.attacco = attacco;
     }
+
+
+
+
 
     public int getDifesa() {
         return difesa;
     }
 
+
+
+
+
     public void setDifesa(int difesa) {
         this.difesa = difesa;
     }
+
+
+
+
+
+    public Arma getInManodx() {
+        return inManodx;
+    }
+
+
+
+
+
+    public void setInManodx(Arma inManodx) {
+        this.inManodx = inManodx;
+    }
+
+
+
+
+
+
+
+
+    public Arma getArma() {
+        return arma;
+    }
+
+
+
+
+
+    public void setArma(Arma arma) {
+        this.arma = arma;
+    }
+
+
+
+
 
     public double calcoloDanno (){
         Random rand = new Random();
@@ -60,4 +128,5 @@ public class Personaggio {
         return (((2*inManodx.getPotenza()*attacco)/(25*difesa))+2)*modificatore;
 
     }
+
 }

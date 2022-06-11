@@ -2,15 +2,25 @@ package PgAr2022.Esame.CarusoMartina;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Eroe extends Personaggio{
 
-    private Arma arma;
-    private Scudo scudo;
+    private Arma arma = new Arma("","","",0);
+    private Scudo scudo = new Scudo(0,"","","Scudo");
     private LinkedList<Oggetto> amuletiEpozioni = new LinkedList<>();
-    private Oggetto inManosx;
 
-    private Amuleto amuleto = new Amuleto();
+    private Scudo inManosx = new Scudo(0, "", "","Scudo");
+
+    public Eroe(String nome, int vita) {
+        super (nome, vita);
+    }
+
+    public void setInManosx(Scudo inManosx) {
+        this.inManosx = inManosx;
+    }
+
+    private Amuleto amuleto = new Amuleto("","","","Amuleto");
 
     public Arma getArma() {
         return arma;
@@ -50,9 +60,7 @@ public class Eroe extends Personaggio{
 
     private LinkedList <Boolean> chiavi = new LinkedList<>();
 
-    public void setInManosx(Oggetto inManosx) {
-        this.inManosx = inManosx;
-    }
+
 
     public Oggetto getInManosx() {
         return inManosx;
@@ -66,8 +74,9 @@ public class Eroe extends Personaggio{
         return amuletiEpozioni;
     }
 
-    public char move (){
-        char scelta;
+    public String move (){
+        String scelta;
+        Scanner in = new Scanner (System.in);
 
 
         System.out.println("[W]. Avanti");
@@ -76,9 +85,9 @@ public class Eroe extends Personaggio{
         System.out.println("[A]. Sinistra");
 
         do {
-            scelta = InputDati.leggiChar("Scegli la tua mossa: ");
+            scelta = in.nextLine();
 
-        }while (scelta!='W'&&scelta!='A'&&scelta!='D'&&scelta!='S');
+        }while ((!scelta.equals("W"))&&(!scelta.equals("A"))&&(!scelta.equals("D"))&&(!scelta.equals("S")));
         return scelta;
 
     }
@@ -86,7 +95,7 @@ public class Eroe extends Personaggio{
     public void ingaggia (int scelta){
         switch (scelta){
             case 1:
-                if (!arma.equals(null)) {
+                if (!arma.getNome().equals("")) {
                     setInManodx(arma);
                     return;
                 }

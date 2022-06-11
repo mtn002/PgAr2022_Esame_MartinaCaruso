@@ -6,7 +6,9 @@ public class Pozione extends Oggetto{
     public int ripristinaVita (int  vita){
         if (vita+RIPRISTINO <=20)
             vita+= +RIPRISTINO;
-        else System.out.println("Non è possibile prendere la pozione");
+        else System.out.println("Non Ã¨ possibile prendere la pozione");
         return vita;
     }
+
+
 }

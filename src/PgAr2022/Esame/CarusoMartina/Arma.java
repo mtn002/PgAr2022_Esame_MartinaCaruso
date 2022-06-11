@@ -10,4 +10,10 @@ public class Arma extends Oggetto{
     public void setPotenza(int potenza) {
         this.potenza = potenza;
     }
+
+    public Arma (String nome, String descrizione, String tipo, int potenza) {
+        super (nome, descrizione, tipo);
+        this.potenza = potenza;
+
+    }
 }

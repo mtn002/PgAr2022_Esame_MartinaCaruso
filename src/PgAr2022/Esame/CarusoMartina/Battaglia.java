@@ -14,17 +14,17 @@ public class Battaglia {
             do {
                 m.setVita(m.getVita() - (int) e.calcoloDanno());
                 System.out.println(m.getNome()+ " ha ricevuto danni da "+e.getNome()+ "; ora ha: "+ m.getVita()+ " di vita!");
-                if (e.getInMano().getTipo().equals("Scudo")) {
-                    if (e.getInMano().getVita() > 0) {
-                        e.getInMano().setVita(e.getInMano().getVita() - (int) m.calcoloDanno());
-                        System.out.println(e.getInMano().getNome() + " ha ricevuto danni da " + m.getNome() + "; ora ha: " + e.getInMano().getVita() + " di vita!");
+                if (e.getInManosx().getTipo().equals("Scudo")) {
+                    if (e.getInManosx().getVita() > 0) {
+                        e.getInManosx().setVita(e.getInManosx().getVita() - (int) m.calcoloDanno());
+                        System.out.println(e.getInManosx().getNome() + " ha ricevuto danni da " + m.getNome() + "; ora ha: " + e.getInManosx().getVita() + " di vita!");
                     }
                 }
                 else {
-                        e.setVita(e.getVita() - (int) m.calcoloDanno());
-                        System.out.println(e.getNome()+ " ha ricevuto danni da "+m.getNome()+ "; ora ha: "+ e.getVita()+ " di vita!");
+                    e.setVita(e.getVita() - (int) m.calcoloDanno());
+                    System.out.println(e.getNome()+ " ha ricevuto danni da "+m.getNome()+ "; ora ha: "+ e.getVita()+ " di vita!");
 
-                    }
+                }
 
 
 
@@ -34,17 +34,17 @@ public class Battaglia {
         else {
             do {
 
-                if (e.getInMano().getTipo().equals("Scudo")) {
-                    if (e.getInMano().getVita() > 0) {
-                        e.getInMano().setVita(e.getInMano().getVita() - (int) m.calcoloDanno());
-                        System.out.println(e.getInMano().getNome() + " ha ricevuto danni da " + m.getNome() + "; ora ha: " + e.getInMano().getVita() + " di vita!");
+                if (e.getInManosx().getTipo().equals("Scudo")) {
+                    if (e.getInManosx().getVita() > 0) {
+                        e.getInManosx().setVita(e.getInManosx().getVita() - (int) m.calcoloDanno());
+                        System.out.println(e.getInManosx().getNome() + " ha ricevuto danni da " + m.getNome() + "; ora ha: " + e.getInManosx().getVita() + " di vita!");
                     }
                 }
                 else {
-                        e.setVita(e.getVita() - (int) m.calcoloDanno());
-                        System.out.println(e.getNome()+ " ha ricevuto danni da "+m.getNome()+ "; ora ha: "+ e.getVita()+ " di vita!");
+                    e.setVita(e.getVita() - (int) m.calcoloDanno());
+                    System.out.println(e.getNome()+ " ha ricevuto danni da "+m.getNome()+ "; ora ha: "+ e.getVita()+ " di vita!");
 
-                    }
+                }
 
                 m.setVita(m.getVita() - (int) e.calcoloDanno());
                 System.out.println(m.getNome()+ " ha ricevuto danni da "+e.getNome()+ "; ora ha: "+ m.getVita()+ " di vita!");

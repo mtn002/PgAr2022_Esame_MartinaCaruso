@@ -7,6 +7,15 @@ public class Oggetto {
     private String descrizione;
     private int potenza;
 
+    public Oggetto() {}
+
+    public Oggetto(String nome, String descrizione, String tipo) {
+        super();
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.tipo = tipo;
+    }
+
     private String tipo;
     private int vita;
 
@@ -51,6 +60,7 @@ public class Oggetto {
         setPotenza(rand.nextInt(35, 55));
         setVita(5);
     }
+
 
 
 }

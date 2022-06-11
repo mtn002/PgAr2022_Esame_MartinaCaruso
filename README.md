@@ -1,11 +1,11 @@
 # PgAr2022_Esame_<MartinaCaruso>
 ## Candidata
-|                  |                   |
-|------------------|-------------------|
-| Nome             | **<Martina>**     |
-| Cognome          | **<Caruso>**      |
-| Matricola        | **<736607>**      |
-| Corso di Studi   | **<Automazione>** |
+|                  |                     |
+|------------------|---------------------|
+| Nome             | **< Martina >**     |
+| Cognome          | **< Caruso >**      |
+| Matricola        | **< 736607 >**      |
+| Corso di Studi   | **< Automazione >** |
 
 ## Moduli Implementati
 - Modulo 1

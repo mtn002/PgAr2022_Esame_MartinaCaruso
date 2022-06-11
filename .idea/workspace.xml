@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ad1361e-0e02-4bee-a955-78c651cd439d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Amuleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Amuleto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Arma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Battaglia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Battaglia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Eroe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Eroe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Mostro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Mostro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Oggetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Oggetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Personaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Personaggio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Pozione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Pozione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Scudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PgAr2022/Esame/CarusoMartina/Scudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

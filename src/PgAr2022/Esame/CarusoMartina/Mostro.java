@@ -33,4 +33,5 @@ public class Mostro extends Personaggio{
         setInManodx(new Arma("","","", 70));
         setNome ("SuperBoss");
     }
+
 }

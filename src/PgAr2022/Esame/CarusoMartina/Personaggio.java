@@ -1,10 +1,24 @@
 package PgAr2022.Esame.CarusoMartina;
 
+import java.util.Random;
+
 public class Personaggio {
     private String nome;
     private int vita;
     private int attacco = 5;
     private int difesa=5;
+
+    private Oggetto inManodx;
+
+
+
+    public Oggetto getInMano() {
+        return inManodx;
+    }
+
+    public void setInManodx(Oggetto inMano) {
+        this.inManodx = inMano;
+    }
 
     public String getNome() {
         return nome;
@@ -36,5 +50,14 @@ public class Personaggio {
 
     public void setDifesa(int difesa) {
         this.difesa = difesa;
+    }
+
+    public double calcoloDanno (){
+        Random rand = new Random();
+        double modificatore = 1;
+        if (rand.nextInt(0,1000)<76)
+            modificatore = 1.5;
+        return (((2*inManodx.getPotenza()*attacco)/(25*difesa))+2)*modificatore;
+
     }
 }

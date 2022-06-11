@@ -1,8 +1,34 @@
 package PgAr2022.Esame.CarusoMartina;
 
+import java.util.Random;
+
 public class Oggetto {
     private String nome;
     private String descrizione;
+    private int potenza;
+
+    private String tipo;
+    private int vita;
+
+    public int getVita() {
+        return vita;
+    }
+
+    public void setVita(int vita) {
+        this.vita = vita;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setPotenza(int potenza) {
+        this.potenza = potenza;
+    }
+
+    public int getPotenza() {
+        return potenza;
+    }
 
     public String getNome() {
         return nome;
@@ -19,4 +45,12 @@ public class Oggetto {
     public void setDescrizione(String descrizione) {
         this.descrizione = descrizione;
     }
+
+    public void creaOggetto(){
+        Random rand = new Random();
+        setPotenza(rand.nextInt(35, 55));
+        setVita(5);
+    }
+
+
 }
